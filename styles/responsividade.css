@@ -1,0 +1,751 @@
+:root{
+    --color-white: #ffff;
+    --color-black: #000000;
+    --color-red: #D15050;
+    --color-red-hover: #e27c7c;
+    --color-creme: #F9F7DC;
+    --color-gray: rgb(23, 23, 23);
+
+    --font-size-small: 12px;
+    --font-size-normal: 16px;
+    --font-size-bigger: 20px;
+
+}
+
+@media screen and (max-width: 400px) {
+     
+    .top-header{
+        text-align: center;
+        height: 60px;
+        padding: 10px;
+
+        h1{
+            font-size: 14px;
+            width: 80%;
+            margin: 5px;
+        }
+    }
+
+    header {
+        height: 150px;
+        background-color: var(--color-black);
+    }
+
+    .header-itens nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .header-itens nav ul li {
+        margin: 5px 0;
+      }
+
+      .header-itens nav ul li a {
+        color: var(--color-white);
+        text-decoration: none;
+      }
+
+      .header-itens nav ul li a:hover {
+        color: var(--color-red-hover);
+      }
+
+    .cart-login {
+        margin-right: 0;
+    }
+
+    #fazer-login{
+        display: none;
+        right: 0;
+    }
+
+    .login {
+        padding-right: 10px;
+
+        i {
+            color: var(--color-white);
+            scale: 1.5;
+            max-width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .logo {
+        height: 100%;
+    }
+
+    .logo img {
+        height: 50px;
+        width: auto;
+        margin-right: 20px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .logo h1 {
+        display: none;
+    }
+
+    header {
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header-itens{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin-right: 20px;
+        padding: 0;
+        gap: 0;
+        margin: 0 auto;
+
+        a{
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+
+    .button-container {
+        gap: 0px;
+        padding: 0;
+        margin-top: 0;
+        border-top: 0;
+        margin: 0 0;
+    }
+
+    .button-back, .button-close {
+        padding: 10px;
+        margin: 0 0;
+        margin-top: 10px;
+    }
+
+    .logo-login-page {
+       img{
+           margin-top: 0;
+           padding: 0;
+           margin: 0 0;
+        } 
+    }
+
+    .products{
+        grid-template-columns: 1fr;
+    }
+
+    .button-whatsapp {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-bottom: 100px;  
+    }
+
+    footer {
+        font-size: 6px;
+        height: 180px;
+    }
+    
+    .footer-content {
+        height: 180px;
+        font-size: 6px;
+        margin-left: 30px;
+        margin-right: 50px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .info ul li {
+        margin-bottom: 10px;
+    }
+    
+    .info ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .info a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    
+    .info, .logo-footer {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+    }
+    
+    .info {
+        justify-content: flex-start;
+    }
+    
+    .logo-footer {
+        justify-content: center;
+        margin-right: 20px;
+    }
+    
+    .redes-sociais {
+        display: none;
+    }
+
+    .redes-sociais-mobile {
+        width: 100%;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.5rem;
+        background-color: var(--color-black);
+        color: var(--color-white);
+        z-index: 2;
+    }
+
+    .redes-sociais-mobile ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .redes-sociais-mobile ul li {
+        margin-bottom: 15px;
+    }
+    
+    .redes-sociais-mobile ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .redes-sociais-mobile h1 {
+        margin-bottom: 20px;
+    }
+    
+    .redes-sociais-mobile a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .footer2 {
+        background-color: var(--color-black);
+        width: 100%;
+        height: 50px;
+        position: relative;
+    }
+    
+    .footer2 h2 {
+        position: absolute; 
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: var(--color-white);
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    aside {
+        width:auto;
+        position:fixed;
+        right:-100vw;
+        top:0;
+        bottom:0;
+        transition: all ease .2s;
+        overflow-x: hidden;
+    }
+
+    aside.show {
+        width:100vw;
+        left: 0;
+    }
+
+    .cart--area {
+        width:100vw;
+    }
+
+    .menu-closer {
+        display:block;
+    }
+
+    .modelsWindowArea {
+        justify-content:flex-start;
+        align-items: flex-start;
+    }
+
+    .modelsWindowBody {
+        width:100vw;
+        display:block;
+        padding:20px;
+        border-radius:0;
+        box-shadow:none;
+        margin:0;
+    }
+
+    .modelsBig img {
+        width: 75%;
+        height: auto;
+    }
+
+    .modelsInfo h1 {
+        margin-top:20px;
+    }
+
+    .modelsInfo--qtarea {
+        height: 60px;
+    }
+
+    .modelsInfo--qtarea button {
+        font-size: 25px;
+        padding: 0px 25px;
+    }
+
+    .modelsInfo--qt {
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+    .modelsInfo--addButton {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .modelsInfo--cancelButton {
+        display:none;
+    }
+
+    .modelsInfo--cancelMobileButton {
+        display:block;
+        margin-bottom: 20px;
+    }
+
+    .models-item {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 840px) {
+
+    .top-header{
+        text-align: center;
+        height: 60px;
+        padding: 10px;
+
+        h1{
+            font-size: 14px;
+            width: 80%;
+            margin: 5px;
+        }
+    }
+
+    header {
+        height: 150px;
+        background-color: var(--color-black);
+    }
+
+    .header-itens nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .header-itens nav ul li {
+        margin: 5px 0;
+      }
+
+      .header-itens nav ul li a {
+        color: var(--color-white);
+        text-decoration: none;
+      }
+
+      .header-itens nav ul li a:hover {
+        color: var(--color-red-hover);
+      }
+
+    .cart-login {
+        margin-right: 0;
+    }
+
+    #fazer-login{
+        display: none;
+        right: 0;
+    }
+
+    .login {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        overflow: hidden;
+      }
+
+    .login i{
+        transform: translateX(10px);
+        width: auto;
+        margin-right: 30px;
+        padding-right: 0;
+        color: var(--color-white);
+        scale: 1.5;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+    
+    .logo {
+        height: 100%;
+    }
+
+    .logo img {
+        height: 50px;
+        width: auto;
+        margin-right: 20px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .logo h1 {
+        display: none;
+    }
+
+    .header-itens{
+        width: 50%;
+        justify-content: space-around;
+        gap: 0;
+
+        a{
+            font-size: 14px;
+        }
+    }
+
+    .button-container {
+        gap: 0px;
+        padding: 0;
+        margin-top: 0;
+        border-top: 0;
+        margin: 0 0;
+    }
+
+    .button-back, .button-close {
+        padding: 10px;
+        margin: 0 0;
+        margin-top: 10px;
+    }
+
+    .logo-login-page {
+       img{
+           margin-top: 0;
+           padding: 0;
+           margin: 0 0;
+           margin-top: 0px;
+        } 
+    }
+
+    body {
+        padding: 0;
+        overflow-x: hidden !important;
+      }
+
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .button-whatsapp {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-bottom: 100px;  
+    }
+
+    footer {
+        font-size: 6px;
+        height: 180px;
+    }
+    
+    .footer-content {
+        height: 180px;
+        font-size: 6px;
+        margin-left: 30px;
+        margin-right: 50px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .info ul li {
+        margin-bottom: 10px;
+    }
+    
+    .info ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .info a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    
+    .info, .logo-footer {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+    }
+    
+    .info {
+        justify-content: flex-start;
+    }
+    
+    .logo-footer {
+        justify-content: center;
+        margin-right: 20px;
+    }
+    
+    .redes-sociais {
+        display: none;
+    }
+
+    .redes-sociais-mobile {
+        width: 100%;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.5rem;
+        background-color: var(--color-black);
+        color: var(--color-white);
+        z-index: 2;
+    }
+
+    .redes-sociais-mobile ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .redes-sociais-mobile ul li {
+        margin-bottom: 15px;
+    }
+    
+    .redes-sociais-mobile ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .redes-sociais-mobile h1 {
+        margin-bottom: 20px;
+    }
+    
+    .redes-sociais-mobile a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .footer2 {
+        background-color: var(--color-black);
+        width: 100%;
+        height: 50px;
+        position: relative;
+    }
+    
+    .footer2 h2 {
+        position: absolute; 
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: var(--color-white);
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    aside {
+        width:auto;
+        position:fixed;
+        right:0;
+        top:0;
+        bottom:0;
+        transition: all ease .2s;
+        overflow-x: hidden;
+        transform: translateX(100%);
+    }
+
+    aside.show {
+        width:100vw;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .cart--area {
+        width:100vw;
+    }
+
+    .menu-closer {
+        display:block;
+    }
+
+    .modelsWindowArea {
+        justify-content:flex-start;
+        align-items: flex-start;
+    }
+
+    .modelsWindowBody {
+        width:100vw;
+        display:block;
+        padding:20px;
+        border-radius:0;
+        box-shadow:none;
+        margin:0;
+    }
+
+    .modelsBig img {
+        width: 75%;
+        height: auto;
+    }
+
+    .modelsInfo h1 {
+        margin-top:20px;
+    }
+
+    .modelsInfo--qtarea {
+        height: 60px;
+    }
+
+    .modelsInfo--qtarea button {
+        font-size: 25px;
+        padding: 0px 25px;
+    }
+
+    .modelsInfo--qt {
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+    .modelsInfo--addButton {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .modelsInfo--cancelButton {
+        display:none;
+    }
+
+    .modelsInfo--cancelMobileButton {
+        display:block;
+        margin-bottom: 20px;
+    }
+
+    .models-item {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* CAMISAS CARRINHO */
+    
+@media (min-width: 1200px) {
+        .models-area {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+        }
+    }
+    
+    @media (max-width: 1199px) {
+        .models-area {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .models-area {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        }
+    }
+
+/* FOOTER */
+
+@media (max-width: 1500px) {
+    .footer-content{
+        color: var(--color-white);
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        height: 100%;
+    
+        img{
+            width: 100px;
+        }
+    }
+    
+    .info{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .info ul {
+        list-style: none;
+        padding: 0;
+        margin-left: 10px;
+        padding-left: 0px;
+    }
+    
+    .info ul li {
+        margin-bottom: 10px;
+    }
+    
+    .info ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* CAMISAS INDEX */
+
+@media (min-width: 841px) and (max-width: 900px) {
+
+    .products{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+
+    .products{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
